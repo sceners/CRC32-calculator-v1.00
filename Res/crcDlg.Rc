@@ -1,0 +1,28 @@
+#define dlgMain 101
+#define grpInfo 1009
+#define grpFile 1008
+#define stcFile 1001
+#define edtFile 1002
+#define btnBrowse 1003
+#define stcCrc 1004
+#define edtCrc 1005
+#define btnCalc 1006
+#define stcInfo 1007
+#define pgbCrc 1010
+dlgMain DIALOGEX 5,5,261,68
+CAPTION "CRC32 Calculator v1.00"
+FONT 8,"Courier New",400,0
+STYLE 0x10CA0800
+EXSTYLE 0x00000010
+BEGIN
+  CONTROL "File......:",stcFile,"Static",0x50000000,5,12,45,9,0x00000000
+  CONTROL "",edtFile,"Edit",0x50010081,54,8,149,12,0x00020000
+  CONTROL "Browse",btnBrowse,"Button",0x50010000,210,8,41,12,0x00020000
+  CONTROL "CRC32.....:",stcCrc,"Static",0x50000000,5,27,45,9,0x00000000
+  CONTROL "",edtCrc,"Edit",0x50010801,54,24,149,12,0x00020000
+  CONTROL "Calculate",btnCalc,"Button",0x50010000,210,24,41,12,0x00020000
+  CONTROL "",stcInfo,"Static",0x50000001,6,46,247,9,0x00000000
+  CONTROL "",grpFile,"Button",0x50000007,1,0,257,40,0x00000000
+  CONTROL "",grpInfo,"Button",0x50000007,1,41,257,16,0x00000000
+  CONTROL "",pgbCrc,"msctls_progress32",0x50000000,1,60,257,5,0x00000000
+END
